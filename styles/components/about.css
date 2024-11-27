@@ -25,6 +25,10 @@
     border-color: var(--clr-slate800);
 }
 
+.about__img-wrapper {
+    max-width: 50%;
+}
+
 .about__subtitle {
     font-size: var(--size-sm);
     color: var(--clr-slate400);
@@ -88,6 +92,7 @@
 
     .about__img {
         width: 28.6875rem;
+
     }
 }
 
