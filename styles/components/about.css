@@ -34,8 +34,13 @@
     color: var(--clr-slate400);
 }
 
+.about__list {
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
 .about__ul-container {
     display: flex;
+    gap: 3rem;
 }
 
 .about__ul {
