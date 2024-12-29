@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+    <meta name="description" content="My Portfolio website" />
+    <meta name="keywords" content="software testing, automation testing, quality assurance, selenium, playwright" />
+    <title>QA Fundamentals</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+<body>
+    <header class="header container">
+        <nav>
+            <ul class="header__menu">
+                <li>
+                    <a href="/index.html#about" class="header__link">About</a>
+                </li>
+                <li>
+                    <a href="/codex.html" class="header__link">Codex</a>
+                </li>
+                <li>
+                    <a href="#featured" class="header__link">Work</a>
+                </li>
+                <li>
+                    <a href="#contact" class="header__link">Contact</a>
+                </li>
+                <li class="header__line"></li>
+                <li>
+                    <button id="theme-toggle" class="header__sun material-symbols-outlined">
+                        light_mode
+                    </button>
+
+
+                </li>
+                <li>
+                    <a class="header__resume btn" href="/Resume9.pdf" target=�_blank�>Resume</a>
+                </li>
+
+            </ul>
+            <button class="header__bars material-symbols-outlined">
+                menu
+            </button>
+        </nav>
+    </header>
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <nav>
+            <ul class="mobile-nav__menu">
+                <li>
+                    <a class="mobile-nav__link" href="/index.html">About</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="/codex.html">Codex</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="#featured">Work</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="#contact">Contact</a>
+                </li>
+                <li class="mobile-nav__link-line">
+                </li>
+                <li>
+                    <button aria-label="theme-toggle btn"
+                            id="theme-toggle"
+                            class="mobile-nav__sun material-symbols-outlined">
+                        light_mode
+                    </button>
+                </li>
+                <li>
+                    <a class="mobile-nav__btn btn" href="#">Resume</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+    <!-- Mobile Navigation End -->
+    <main>
+        <!-- Article -->
+        <div class="article">
+            <!-- Article Header -->
+            <header class="article__header">
+                <h1>Understanding QA Fundamentals</h1>
+                <p class="article__meta">
+                    <time datetime="2024-12-28">December 28, 2024</time>
+                </p>
+            </header>
+
+            <!-- Article Intro -->
+            <section class="article__intro">
+                <p>
+                    Quality assurance (QA) is an essential aspect of software development. In this article, we'll explore the core principles, methodologies, and tools that form the foundation of effective QA processes.
+                </p>
+            </section>
+
+            <!-- Core Sections in a Grid Layout -->
+            <section class="article__content">
+                <div class="article__section">
+                    <h2 class="article__section-header">What is Quality?</h2>
+                    <p class="article__section-content">
+                        Quality is all about meeting the needs and expectations of customers concerning the functionality, design, reliability, durability, & price of the product.
+                    </p>
+                </div>
+                <div class="article__section">
+                    <h2 class="article__section-header">What is Assurance?</h2>
+                    <p class="article__section-content">
+                        Assurance is a guarantee that the product will work without any problems as per the expectations or requirements.
+                    </p>
+                </div>
+                <div class="article__section">
+                    <h2 class="article__section-header">Testing Approaches</h2>
+                    <p class="article__section-content">
+                        Three approaches are commonly used to implement functional testing (differs from non-functional testing):
+                    </p>
+                    <ul>
+                        <li><strong>Black Box Testing</strong> QA is integrated into the development cycle.</li>
+                        <li><strong>White Box Testing</strong> Sequential testing phases, often used in traditional projects.</li>
+                        <li><strong>Gray Box Testing</strong> Focuses on automation and continuous testing.</li>
+                    </ul>
+                </div>
+                <div class="article__section">
+                    <h2 class="article__section-header">Functional vs. Non-Functional Testing</h2>
+                    <p class="article__section-content">
+                        Modern QA relies on a variety of tools to ensure efficiency and effectiveness. Popular tools include:
+                    </p>
+                    <ul>
+                        <li><strong>Selenium:</strong> For browser automation.</li>
+                        <li><strong>JIRA:</strong> For issue tracking and management.</li>
+                        <li><strong>Postman:</strong> For API testing.</li>
+                    </ul>
+                </div>
+                <div class="article__section">
+                    <h2 class="article__section-header">Conclusion</h2>
+                    <p class="article__section-content">
+                        QA is not just about finding bugs; it’s about building confidence in the software and ensuring that it meets both user expectations and business requirements. Whether you're a beginner or an experienced QA professional, understanding these fundamentals is key to success.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <aside class="cta">
+                <h3>Explore More QA Topics</h3>
+                <p>
+                    Check out the <a href="/codex.html">Codex</a> for in-depth guides on QA, automation, and testing fundamentals.
+                </p>
+            </aside>
+        </div>
+    </main>
+    <footer class="footer container">
+        <h3 class="footer__title">~ Gavin Benson ~</h3>
+    </footer>
+
+    <script type="module" src="../src/main.js"></script>
+</body>
+
+</html>
