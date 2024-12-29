@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+    <meta name="description" content="My Portfolio website" />
+    <meta name="keywords" content="software testing, automation testing, quality assurance, selenium, playwright" />
+    <title>Codex</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+<body>
+
+    
+    <header class="header container">
+        <nav>
+            <ul class="header__menu">
+                <li>
+                    <a href="/index.html#about" class="header__link">About</a>
+                </li>
+                <li>
+                    <a href="/codex.html" class="header__link">Codex</a>
+                </li>
+                <li>
+                    <a href="#featured" class="header__link">Work</a>
+                </li>
+                <li>
+                    <a href="#contact" class="header__link">Contact</a>
+                </li>
+                <li class="header__line"></li>
+                <li>
+                    <button id="theme-toggle" class="header__sun material-symbols-outlined">
+                        light_mode
+                    </button>
+
+
+                </li>
+                <li>
+                    <a class="header__resume btn" href="/Resume9.pdf" target=�_blank�>Resume</a>
+                </li>
+
+            </ul>
+            <button class="header__bars material-symbols-outlined">
+                menu
+            </button>
+        </nav>
+    </header>
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <nav>
+            <ul class="mobile-nav__menu">
+                <li>
+                    <a class="mobile-nav__link" href="/index.html">About</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="/codex.html">Codex</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="#featured">Work</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="#contact">Contact</a>
+                </li>
+                <li class="mobile-nav__link-line">
+                </li>
+                <li>
+                    <button aria-label="theme-toggle btn"
+                            id="theme-toggle"
+                            class="mobile-nav__sun material-symbols-outlined">
+                        light_mode
+                    </button>
+                </li>
+                <li>
+                    <a class="mobile-nav__btn btn" href="#">Resume</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+    <!-- Mobile Navigation End -->
+    <main>
+        <section class="codex container section codex posts">
+            <div id="codex" class="codex__content">
+                <h1>Welcome to the Codex</h1>
+                <a href="#" class="codex__description codex__topic" data-topic="QA Fundamentals">QA Fundamentals & Methodologies</a>
+                <a href="#" class="codex__description codex__topic" data-topic="Automation Testing">Automation Testing Frameworks</a>
+                <a href="#" class="codex__description codex__topic" data-topic="Test Case Management">Test Case Management</a>
+                <a href="#" class="codex__description codex__topic" data-topic="Debugging and Bug Reporting">Debugging and Bug Reporting</a>
+                <hr class="codex__hr">
+            </div>
+        </section>
+    </main>
+
+
+
+    <script>
+
+
+        // Define the content for each topic
+        const topicsContent = {
+            "QA Fundamentals": [
+                { title: "Introduction to QA principles", link: "/articles/qa-fundamentals-1.html" },
+                { title: "Types of testing: Manual vs Automation", link: "/articles/qa-fundamentals-2.html" },
+                { title: "Software development life cycle (SDLC)", link: "/articles/qa-fundamentals-3.html" }
+            ],
+            "Automation Testing": [
+                { title: "Top automation frameworks: Selenium, Playwright", link: "/articles/automation-testing-1.html" },
+                { title: "Best practices for writing automated tests", link: "/articles/automation-testing-2.html" },
+                { title: "Continuous integration with automated tests", link: "/articles/automation-testing-3.html" }
+            ],
+            "Test Case Management": [
+                { title: "How to write effective test cases", link: "/articles/test-case-management-1.html" },
+                { title: "Tools for test management: Jira, TestRail", link: "/articles/test-case-management-2.html" },
+                { title: "Organizing and prioritizing test cases", link: "/articles/test-case-management-3.html" }
+            ],
+            "Debugging and Bug Reporting": [
+                { title: "Common debugging techniques", link: "/articles/debugging-1.html" },
+                { title: "Creating detailed bug reports", link: "/articles/debugging-2.html" },
+                { title: "Tools for debugging and reporting", link: "/articles/debugging-3.html" }
+            ]
+        };
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const codexContent = document.getElementById("codex");
+
+            // Listen for clicks on topics
+            codexContent.addEventListener("click", (event) => {
+                if (event.target.classList.contains("codex__topic")) {
+                    event.preventDefault();
+
+                    // Get the selected topic
+                    const topic = event.target.dataset.topic;
+
+                    // Clear the current content and show a loading message
+                    codexContent.innerHTML = `<h1>${topic}</h1><p>Loading articles for ${topic}...</p>`;
+
+                    // Simulate loading the content
+                    setTimeout(() => {
+                        // Generate the list of articles for the topic
+                        const articles = topicsContent[topic]
+                            .map(article => `<li><a href="${article.link}" target="_blank">${article.title}</a></li>`)
+                            .join("");
+
+                        // Display the content
+                        codexContent.innerHTML = `
+                                    <h1>${topic}</h1>
+                                    <ul>${articles}</ul>
+                                    <button onclick="location.reload()">Back to Topics</button>
+                                `;
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
