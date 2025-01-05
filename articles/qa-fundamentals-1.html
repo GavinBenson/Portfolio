@@ -22,10 +22,10 @@
                     <a href="/codex.html" class="header__link">Codex</a>
                 </li>
                 <li>
-                    <a href="#featured" class="header__link">Work</a>
+                    <a href="/index.html#featured" class="header__link">Work</a>
                 </li>
                 <li>
-                    <a href="#contact" class="header__link">Contact</a>
+                    <a href="/index.html#contact" class="header__link">Contact</a>
                 </li>
                 <li class="header__line"></li>
                 <li>
@@ -50,16 +50,16 @@
         <nav>
             <ul class="mobile-nav__menu">
                 <li>
-                    <a class="mobile-nav__link" href="/index.html">About</a>
+                    <a class="mobile-nav__link" href="/index.html#about">About</a>
                 </li>
                 <li>
                     <a class="mobile-nav__link" href="/codex.html">Codex</a>
                 </li>
                 <li>
-                    <a class="mobile-nav__link" href="#featured">Work</a>
+                    <a class="mobile-nav__link" href="/index.html#featured">Work</a>
                 </li>
                 <li>
-                    <a class="mobile-nav__link" href="#contact">Contact</a>
+                    <a class="mobile-nav__link" href="/index.html#contact">Contact</a>
                 </li>
                 <li class="mobile-nav__link-line">
                 </li>
@@ -85,55 +85,142 @@
         <div class="article">
             <!-- Article Header -->
             <header class="article__header">
-                <h1>Understanding QA Fundamentals</h1>
+                <h1>QA Fundamentals</h1>
                 <p class="article__meta">
-                    <time datetime="2024-12-28">December 28, 2024</time>
+                    Principles, Processes, and Roles | <time datetime="2024-12-28">December 28, 2024</time>
                 </p>
             </header>
 
             <!-- Article Intro -->
             <section class="article__intro">
                 <p>
-                    Quality assurance (QA) is an essential aspect of software development. In this article, we'll explore the core principles, methodologies, and tools that form the foundation of effective QA processes.
+                    Quality Assurance (QA) is the cornerstone of delivering reliable and user-friendly software. This article explores the fundamental principles of QA, the processes it entails, and the roles QA professionals play in the software development life cycle (SDLC).
                 </p>
             </section>
 
             <!-- Core Sections in a Grid Layout -->
             <section class="article__content">
                 <div class="article__section">
-                    <h2 class="article__section-header">What is Quality?</h2>
+                    <h2 class="article__section-header">Quality? Assurance? What's the difference?</h2>
                     <p class="article__section-content">
-                        Quality is all about meeting the needs and expectations of customers concerning the functionality, design, reliability, durability, & price of the product.
+                        <strong>Quality</strong> refers to how well a product meets customer needs and expectations in terms of functionality, design,
+                        reliability, durability, and cost. In software development, this means delivering a product that works
+                        as intended, providing value to the user.
+                    </p>
+                    <p class="article__section-content">
+                        <strong>Assurance</strong> is the guarantee that the product will perform as expected without issues, adhering to defined requirements and standards.
                     </p>
                 </div>
                 <div class="article__section">
-                    <h2 class="article__section-header">What is Assurance?</h2>
+                    <h2 class="article__section-header">What is Quality Assurance?</h2>
                     <p class="article__section-content">
-                        Assurance is a guarantee that the product will work without any problems as per the expectations or requirements.
+                        QA is the practice of ensuring that software products meet predefined quality standards and fulfill user expectations. It encompasses systematic activities designed to monitor and improve the development process, preventing defects before they occur.
                     </p>
-                </div>
-                <div class="article__section">
-                    <h2 class="article__section-header">Testing Approaches</h2>
                     <p class="article__section-content">
-                        Three approaches are commonly used to implement functional testing (differs from non-functional testing):
+                        Key objectives of QA include:
                     </p>
                     <ul>
-                        <li><strong>Black Box Testing</strong> QA is integrated into the development cycle.</li>
-                        <li><strong>White Box Testing</strong> Sequential testing phases, often used in traditional projects.</li>
-                        <li><strong>Gray Box Testing</strong> Focuses on automation and continuous testing.</li>
+                        <li><strong>Defining Standards:</strong> Establishing benchmarks for functionality, usability, and performance.</li>
+                        <li><strong>Preventing Defects:</strong> Identifying potential issues early in the development cycle.</li>
+                        <li><strong>Enhancing User Confidence:</strong> Delivering reliable software that meets end-user needs.</li>
                     </ul>
                 </div>
                 <div class="article__section">
-                    <h2 class="article__section-header">Functional vs. Non-Functional Testing</h2>
+                    <h2 class="article__section-header">The Principles of QA</h2>
                     <p class="article__section-content">
-                        Modern QA relies on a variety of tools to ensure efficiency and effectiveness. Popular tools include:
+                        QA is guided by several core principles that ensure effective outcomes:
+                    </p>
+                    <ol>
+                        <li>
+                            <strong>Customer-Centric Approach:</strong>
+                            <ul>
+                                <li>Prioritizing user requirements and expectations.</li>
+                                <li>Ensuring the final product aligns with real-world needs.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Proactive Prevention:</strong>
+                            <ul>
+                                <li>Emphasizing early detection and resolution of potential issues.</li>
+                                <li>Integrating quality practices at each development stage.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Process-Oriented Mindset:</strong>
+                            <ul>
+                                <li>Focusing on the methodology and tools used to create the software.</li>
+                                <li>Continuously improving processes to enhance efficiency and output.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Collaboration and Communication:</strong>
+                            <ul>
+                                <li>Promoting teamwork across QA, development, and other stakeholders.</li>
+                                <li>Ensuring transparency and shared responsibility for quality.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <div class="article__section">
+                    <h2 class="article__section-header">QA in the Software Development Life Cycle (SDLC)</h2>
+                    <p class="article__section-content">
+                        As QA professionals, our role spans every phase of this process to ensure the final product meets
+                        high-quality standards.
+                    </p>
+                    <ol>
+                        <li>
+                            <strong>Requirement Analysis:</strong>
+                            <ul>
+                                <li>Verifies that requirements are clear, consistent, and testable.</li>
+                                <li>Collaborates with stakeholders to identify potential risks.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Design Phase:</strong>
+                            <ul>
+                                <li>Reviews design documents for alignment with requirements.</li>
+                                <li>Identifies areas that require specific testing strategies.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Development Phase:</strong>
+                            <ul>
+                                <li>Works alongside developers to ensure coding standards are followed.</li>
+                                <li>Implements unit and integration testing to catch early defects.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Testing Phase:</strong>
+                            <ul>
+                                <li>Conducts functional, non-functional, and regression testing.</li>
+                                <li>Ensures thorough coverage of all requirements.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Deployment and Maintenance:</strong>
+                            <ul>
+                                <li>Validates the readiness of the software for production.</li>
+                                <li>Monitors performance and addresses post-release issues.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <div class="article__section">
+                    <h2 class="article__section-header">The Role of QA Professionals</h2>
+                    <p class="article__section-content">
+                        QA professionals are key players in the development process, bridging the gap between technical implementation and user satisfaction. Their responsibilities include:
                     </p>
                     <ul>
-                        <li><strong>Selenium:</strong> For browser automation.</li>
-                        <li><strong>JIRA:</strong> For issue tracking and management.</li>
-                        <li><strong>Postman:</strong> For API testing.</li>
+                        <li><strong>Creating Test Plans:</strong> Developing comprehensive strategies to validate requirements.</li>
+                        <li><strong>Executing Tests:</strong> Performing manual or automated testing to identify defects.</li>
+                        <li><strong>Documenting Issues:</strong> Logging bugs, tracking resolutions, and providing detailed reports.</li>
+                        <li><strong>Advocating for Quality:</strong> Collaborating with developers to resolve issues and improve processes.</li>
                     </ul>
+                    <p class="article__section-content">
+                        Beyond technical tasks, QA professionals act as champions of quality, ensuring that user needs remain a priority throughout development.
+                    </p>
                 </div>
+
                 <div class="article__section">
                     <h2 class="article__section-header">Conclusion</h2>
                     <p class="article__section-content">

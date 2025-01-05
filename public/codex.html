@@ -25,10 +25,10 @@
                     <a href="/codex.html" class="header__link">Codex</a>
                 </li>
                 <li>
-                    <a href="#featured" class="header__link">Work</a>
+                    <a href="/index.html#featured" class="header__link">Work</a>
                 </li>
                 <li>
-                    <a href="#contact" class="header__link">Contact</a>
+                    <a href="/index.html#contact" class="header__link">Contact</a>
                 </li>
                 <li class="header__line"></li>
                 <li>
@@ -39,7 +39,7 @@
 
                 </li>
                 <li>
-                    <a class="header__resume btn" href="/Resume9.pdf" target=�_blank�>Resume</a>
+                    <a class="header__resume btn" href="/Resume9.pdf" target=_blank>Resume</a>
                 </li>
 
             </ul>
@@ -53,16 +53,16 @@
         <nav>
             <ul class="mobile-nav__menu">
                 <li>
-                    <a class="mobile-nav__link" href="/index.html">About</a>
+                    <a class="mobile-nav__link" href="/index.html#about">About</a>
                 </li>
                 <li>
                     <a class="mobile-nav__link" href="/codex.html">Codex</a>
                 </li>
                 <li>
-                    <a class="mobile-nav__link" href="#featured">Work</a>
+                    <a class="mobile-nav__link" href="/index.html#featured">Work</a>
                 </li>
                 <li>
-                    <a class="mobile-nav__link" href="#contact">Contact</a>
+                    <a class="mobile-nav__link" href="/index.html#contact">Contact</a>
                 </li>
                 <li class="mobile-nav__link-line">
                 </li>
@@ -104,9 +104,9 @@
         // Define the content for each topic
         const topicsContent = {
             "QA Fundamentals": [
-                { title: "Introduction to QA principles", link: "/articles/qa-fundamentals-1.html" },
-                { title: "Types of testing: Manual vs Automation", link: "/articles/qa-fundamentals-2.html" },
-                { title: "Software development life cycle (SDLC)", link: "/articles/qa-fundamentals-3.html" }
+                { title: "Understanding the Basics of QA: Principles, Processes, and Roles", link: "/articles/qa-fundamentals-1.html" },
+                { title: "Testing Approaches Demystified: Manual, Automated, and Beyond", link: "/articles/qa-fundamentals-2.html" },
+                { title: "The QA Mindset: Tools, Skills, and Strategies for Success", link: "/articles/qa-fundamentals-3.html" }
             ],
             "Automation Testing": [
                 { title: "Top automation frameworks: Selenium, Playwright", link: "/articles/automation-testing-1.html" },
@@ -137,19 +137,19 @@
                     const topic = event.target.dataset.topic;
 
                     // Clear the current content and show a loading message
-                    codexContent.innerHTML = `<h1>${topic}</h1><p>Loading articles for ${topic}...</p>`;
+                    codexContent.innerHTML = `<h1 class="codex__title">${topic}</h1><p>Loading articles for ${topic}...</p>`;
 
                     // Simulate loading the content
                     setTimeout(() => {
                         // Generate the list of articles for the topic
                         const articles = topicsContent[topic]
-                            .map(article => `<li><a href="${article.link}" target="_blank">${article.title}</a></li>`)
+                            .map(article => `<li class="codex__list"><a href="${article.link}" target="_blank">${article.title}</a></li>`)
                             .join("");
 
                         // Display the content
                         codexContent.innerHTML = `
-                                    <h1>${topic}</h1>
-                                    <ul>${articles}</ul>
+                                    <h1 class="codex__title">${topic}</h1>
+                                    <ul class="codex__ul">${articles}</ul>
                                     <button onclick="location.reload()">Back to Topics</button>
                                 `;
                     }, 1000);
