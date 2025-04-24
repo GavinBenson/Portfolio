@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/codex.css">
+    <link rel="stylesheet" href="styles/codex.css">
     <meta name="description" content="My Portfolio website" />
     <meta name="keywords" content="software testing, automation testing, quality assurance, selenium, playwright" />
     <title>Codex</title>
@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    
+
     <header class="header container">
         <nav>
             <ul class="header__menu">
@@ -148,16 +148,16 @@
 
                         // Display the content
                         codexContent.innerHTML = `
-                                    <h1 class="codex__title">${topic}</h1>
-                                    <ul class="codex__ul">${articles}</ul>
-                                    <button onclick="location.reload()">Back to Topics</button>
-                                `;
+                                        <h1 class="codex__title">${topic}</h1>
+                                        <ul class="codex__ul">${articles}</ul>
+                                        <button onclick="location.reload()">Back to Topics</button>
+                                    `;
                     }, 1000);
                 }
             });
         });
     </script>
 
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/utils/codex.js"></script>
 </body>
 </html>
