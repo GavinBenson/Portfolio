@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <title>Codex Test</title>
+</head>
+<body>
+    <h1>Codex Test Page</h1>
+
+
+
+    <header class="header container">
+        <nav>
+            <ul class="header__menu">
+                <li>
+                    <a href="/index.html#about" class="header__link">About</a>
+                </li>
+                <li>
+                    <a href="/codex.html" class="header__link">Codex</a>
+                </li>
+                <li>
+                    <a href="/index.html#featured" class="header__link">Work</a>
+                </li>
+                <li>
+                    <a href="/index.html#contact" class="header__link">Contact</a>
+                </li>
+                <li class="header__line"></li>
+                <li>
+                    <button id="theme-toggle" class="header__sun material-symbols-outlined">
+                        light_mode
+                    </button>
+
+
+                </li>
+                <li>
+                    <a class="header__resume btn" href="/Resume9.pdf" target=_blank>Resume</a>
+                </li>
+
+            </ul>
+            <button class="header__bars material-symbols-outlined">
+                menu
+            </button>
+        </nav>
+    </header>
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <nav>
+            <ul class="mobile-nav__menu">
+                <li>
+                    <a class="mobile-nav__link" href="/index.html#about">About</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="/codex.html">Codex</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="/index.html#featured">Work</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="/index.html#contact">Contact</a>
+                </li>
+                <li class="mobile-nav__link-line">
+                </li>
+                <li>
+                    <button aria-label="theme-toggle btn"
+                            id="theme-toggle"
+                            class="mobile-nav__sun material-symbols-outlined">
+                        light_mode
+                    </button>
+                </li>
+                <li>
+                    <a class="mobile-nav__btn btn" href="#">Resume</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+    <!-- Mobile Navigation End -->
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/codex.js"></script>
+</body>
+</html>

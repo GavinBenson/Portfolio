@@ -4,7 +4,6 @@ import '../styles/components/article.css'
 import '../styles/components/header.css'
 import '../styles/components/hero.css'
 import '../styles/components/about.css'
-import '../styles/components/codex.css'
 import '../styles/components/featured.css'
 import '../styles/components/popup.css'
 import '../styles/components/work.css'
@@ -18,6 +17,9 @@ import mobileNav from './utils/mobile-nav';
 import darkMode from './utils/dark-mode';
 import lazyLoading from './utils/lazy-loading.js';
 
-mobileNav();
-darkMode();
-lazyLoading();
+
+// Initialize utilities
+window.addEventListener('DOMContentLoaded', () => {
+    mobileNav();
+    darkMode();
+});
