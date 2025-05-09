@@ -8,16 +8,30 @@
     ],
     "routes": [
         {
-            "src": "/(.*)",
-            "dest": "/index.html"
-        },
-        {
             "src": "/styles/(.*)",
             "dest": "/styles/$1"
         },
         {
             "src": "/src/(.*)",
-            "dest": "/src/$1"
+            "dest": "/src/$1",
+            "headers": {
+                "Content-Type": "application/javascript"
+            }
+        },
+        {
+            "src": "/codex.html",
+            "dest": "/codex.html"
+        },
+        {
+            "src": "/codexBack.html",
+            "dest": "/codexBack.html"
+        },
+        {
+            "handle": "filesystem"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
         }
     ]
 }

@@ -1,17 +1,19 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
-import fs from 'fs';
-
-// Get the absolute path of the project root
-const projectRoot = process.cwd();
 
 export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-                main: resolve(projectRoot, 'index.html'),
-                codex: resolve(projectRoot, 'codex.html')
+                main: resolve(__dirname, 'index.html'),
+                codex: resolve(__dirname, 'codex.html')
             }
-        }
+        },
+        // Ensure assets are properly handled
+        assetsDir: 'assets',
+        // Prevent CSS and JS from being inlined
+        cssCodeSplit: true,
+        // Keep JS and CSS separate
+        minify: 'terser'
     }
 });
